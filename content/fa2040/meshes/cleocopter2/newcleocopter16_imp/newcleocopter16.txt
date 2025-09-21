@@ -1,0 +1,421 @@
+{
+
+	"Object3d" :
+	{
+
+		"Models" :
+		[
+
+			{
+
+				"Name"   : "mainrotor",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"mainrotor.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "canopy",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"canopy.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "stand",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"stand.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "main_rotor_shaft",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"main_rotor_shaft.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "radar",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"radar.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "jets",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"jets.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "tail_rotor",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"tail_rotor.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "body",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"body.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "gun_Cylinder.001",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"gun_Cylinder.001.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "gunmount_Mesh.005",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"gunmount_Mesh.005.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "White.010",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"White.010.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "gunpivot_Mesh.003",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"gunpivot_Mesh.003.3df"
+				]
+
+			}
+
+		],
+
+		"Hierarchy":
+		[
+
+			{
+				"mainrotor" : "canopy"
+			},
+
+			{
+				"mainrotor" : "stand"
+			},
+
+			{
+				"mainrotor" : "main_rotor_shaft"
+			},
+
+			{
+				"mainrotor" : "radar"
+			},
+
+			{
+				"mainrotor" : "jets"
+			},
+
+			{
+				"mainrotor" : "tail_rotor"
+			},
+
+			{
+				"mainrotor" : "body"
+			},
+
+			{
+				"mainrotor" : "gun_Cylinder.001"
+			},
+
+			{
+				"mainrotor" : "gunmount_Mesh.005"
+			},
+
+			{
+				"mainrotor" : "White.010"
+			},
+
+			{
+				"mainrotor" : "gunpivot_Mesh.003"
+			}
+
+		]
+
+	}
+}

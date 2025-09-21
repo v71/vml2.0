@@ -1,0 +1,251 @@
+{
+
+	"Object3d" :
+	{
+
+		"Models" :
+		[
+
+			{
+
+				"Name"   : "upperbody",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"upperbody.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "supports",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"supports.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "lowerbody",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"lowerbody.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "D30-Engines-Top.001_Mesh.017",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"D30-Engines-Top.001_Mesh.017.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "D30-Engines-Top.002_Mesh.015",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"D30-Engines-Top.002_Mesh.015.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "gun",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"gun.3df"
+				]
+
+			},
+
+			{
+
+				"Name"   : "tail_rotor.002",
+
+				"Pos"    :
+				[
+				   0 , 0 , 0
+				],
+
+				"Scale"  :
+				[
+					1,1,1
+				],
+
+				"Angles" :
+				[
+					0,0,0
+				],
+
+				"Materials" :
+				[
+				],
+
+				"Geometry" :
+				[
+					"tail_rotor.002.3df"
+				]
+
+			}
+
+		],
+
+		"Hierarchy":
+		[
+
+			{
+				"upperbody" : "supports"
+			},
+
+			{
+				"upperbody" : "lowerbody"
+			},
+
+			{
+				"upperbody" : "D30-Engines-Top.001_Mesh.017"
+			},
+
+			{
+				"upperbody" : "D30-Engines-Top.002_Mesh.015"
+			},
+
+			{
+				"upperbody" : "gun"
+			},
+
+			{
+				"upperbody" : "tail_rotor.002"
+			}
+
+		]
+
+	}
+}

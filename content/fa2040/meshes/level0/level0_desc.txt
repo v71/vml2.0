@@ -1,0 +1,8 @@
+LevelName=level0
+LevelBitmap=c:\vml2.0\content\fa2040\textures\level9.bmp
+LevelMapMesh=c:\vml2.0\content\fa2040\meshes\level0\level0.3df
+LevelCollisionMesh=c:\vml2.0\content\fa2040\meshes\level0\level0_col.3df
+LevelNavMesh=c:\vml2.0\content\fa2040\meshes\level0\level0_nav.3df
+LevelNavBitmapMask=c:\vml2.0\content\fa2040\meshes\level0\level0_nav_mask.bmp
+LevelNavMeshBitmapMaskScalingFactor=5
+LevelNavMeshBitmapMaskErosionFactor=4
