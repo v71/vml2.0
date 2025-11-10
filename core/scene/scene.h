@@ -20,7 +20,6 @@ namespace vml
 
 				vml::scenes::Level			  *Level;
 				vml::objects::ObjectManager_2 *ObjectManager;
-				vml::NvidiaPhysXEngine		  *NvPhysX;
 
 			public:
 
@@ -126,10 +125,6 @@ namespace vml
 					if ( !Level->IsLoaded())
 						vml::os::Message::Error("Level : ", "Level is not initted");
 
-					// cretae the bvh 
-
-					NvPhysX->CreateBVHFromMesh(Level->GetCollisionMesh());
-
 					// once the bvh is created we do not need anymore the navmesh data
 
 					Level->GetNavMesh()->ReleaseVertexBufferData();
@@ -171,14 +166,6 @@ namespace vml
 
 				// -------------------------------------------------------------------
 				//
-			
-				void StepPhysics()
-				{
-					NvPhysX->StepPhysics();
-				}
-
-				// -------------------------------------------------------------------
-				//
 				
 				void Clear()
 				{
@@ -186,14 +173,12 @@ namespace vml
 
 					vml::SafeDelete(Level);
 					vml::SafeDelete(ObjectManager);
-					vml::SafeDelete(NvPhysX);
 
 					// reallocate classes
 
 					Name		  = "";
 					Level		  = new vml::scenes::Level();
 					ObjectManager = new vml::objects::ObjectManager_2();
-					NvPhysX		  = new vml::NvidiaPhysXEngine();
 				
 					// set flags
 
@@ -203,27 +188,6 @@ namespace vml
 
 					vml::Logger::GetInstance()->Out(vml::Logger::GetInstance()->GetCurrentDate(), "Scene", "Cleared", "Done");
 
-				}
-				
-				// -------------------------------------------------------------------
-				//
-				
-				bool RayCastClosest(const glm::vec3 &o,const glm::vec3 &dir, physx::PxRaycastBuffer &hit,const float maxdist= FLT_MAX)
-				{
-					physx::PxVec3 origin(physx::PxVec3(o.x, o.y, o.z));
-					physx::PxVec3 unitDir(dir.x, dir.y, dir.z);
-					physx::PxReal maxDistance = maxdist;
-					return NvPhysX->gScene->raycast(origin, unitDir, maxDistance, hit);
-				}
-				
-				bool RayCastAny(const glm::vec3& o, const glm::vec3& dir, physx::PxRaycastBuffer& hit, const float maxdist = FLT_MAX)
-				{
-					physx::PxVec3 origin(physx::PxVec3(o.x, o.y, o.z));
-					physx::PxVec3 unitDir(dir.x, dir.y, dir.z);
-					physx::PxReal maxDistance = maxdist;
-					PxQueryFilterData fdAny;
-					fdAny.flags |= PxQueryFlag::eANY_HIT; // note the OR with the default value
-					return NvPhysX->gScene->raycast(origin, unitDir, maxDistance, hit, PxHitFlags(PxHitFlag::eDEFAULT), fdAny);
 				}
 				
 				// -------------------------------------------------------------------
@@ -288,7 +252,6 @@ namespace vml
 					Name		  = "";
 					Level		  = new vml::scenes::Level();
 					ObjectManager = new vml::objects::ObjectManager_2();
-					NvPhysX		  = new vml::NvidiaPhysXEngine();
 
 					// set flags
 
@@ -303,7 +266,6 @@ namespace vml
 				{
 					vml::SafeDelete(Level);
 					vml::SafeDelete(ObjectManager);
-					vml::SafeDelete(NvPhysX);
 
 					// log message
 
